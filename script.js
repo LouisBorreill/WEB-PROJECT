@@ -104,6 +104,8 @@ function addCity() {
     div.appendChild(name);
     div.appendChild(img);
     div.appendChild(info);
+
+    this.form.reset();
   }
 }
 
@@ -117,6 +119,8 @@ function removeCity() {
 
     var div = document.getElementById(cityRemove.value);
     div.remove();
+
+    cityRemove.value = "";
   }
 
   else {
