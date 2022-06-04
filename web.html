@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EUROPEAN CAPITAL CITIES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <li id="ESIEAPROJECT"><a href="#"">ESIEA Project</a></li>
+        </nav>
+        <div id="principlePicture">
+            <h1>EUROPEAN CAPITAL CITIES</h1>
+            <div id="firstLine"></div>
+            <h3>Made by Louis Borreill</h3>
+        </div>
+    </header>
+
+    <section id="cities">
+        <div id="introduction">
+            <h2>List of Capital cities in Europe</h2>
+            <p>You can add or remove cities and also modify the name and the description of each city.</p>
+        </div>
+
+        <div class="login-box" id="form1" style="display:none">
+            <h2>City</h2>
+            <form>
+                <div class="user-box">
+                    <input type="text" name="" id="NameAdd" required>
+                    <label>Name</label>
+                </div>
+                <div class="user-box">
+                    <input type="file" name="" id="Picture" accept="image/*" required>
+                    <label>Picture</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" name="" id="Description" required>
+                    <label>Description</label>
+                </div>
+                <button id="Add" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Add
+                </button>
+                <span id="ErrorAdd" class="Error"></span>
+            </form>
+        </div>
+        
+        <div class="login-box" id="form2" style="display:none">
+            <h2>City</h2>
+            <form>
+                <div class="user-box">
+                    <input type="text" name="" id="NameRemove" required>
+                    <label>Name</label>
+                </div>
+                <button id="Remove" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Remove
+                </button>
+                <span id="ErrorRemove" class="Error"></span>
+            </form>
+        </div>  
+    
+        <button class="btn" id="Form1Visibility"> Add a city</button>
+            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+            </svg>
+        
+        <button class="btn" id="Form2Visibility"> Remove a city</button>
+        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+        </svg>
+
+        <div id="list">
+            <div class="pictures" id="Paris">
+                <h4 contenteditable="true">Paris</h4>
+                <img src="paris.jpg" width="290" height="145" alt="image of Paris">
+                <h4 contenteditable="true">Description of Paris</h4>
+            </div>
+
+            <div class="pictures" id="Berlin">
+                <h4 contenteditable="true">Berlin</h4>
+                <img src="berlin.jpg" width="290" height="145" alt="image of Berlin">
+                <h4 contenteditable="true">Description of Berlin</h4>
+            </div>
+
+            <div class="pictures" id="Kiev">
+                <h4 contenteditable="true">Kiev</h4>
+                <img src="kiev.jpg" width="290" height="145" alt="image of Kiev">
+                <h4 contenteditable="true">Description of Kiev</h4>
+            </div>
+
+            <div class="pictures" id="Athens">
+                <h4 contenteditable="true">Athens</h4>
+                <img src="athens.jpeg" width="290" height="145" alt="image of Athens">
+                <h4 contenteditable="true">Description of Athens</h4>
+            </div>
+
+            <div class="pictures" id="Brussels">
+                <h4 contenteditable="true">Brussels</h4>
+                <img src="brussels.jpg" width="290" height="145" alt="image of Brussels">
+                <h4 contenteditable="true">Description of Brussels</h4>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
